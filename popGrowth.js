@@ -37,8 +37,7 @@ function nbYear(p0, percent, aug, p) {
     let numYears = 0
 
     while (pCur < p) {
-        pCur += pCur * percen + aug
-        pCur = Math.floor(pCur)
+        pCur += Math.floor(pCur * percen) + aug
         numYears++
     }
     return numYears
